@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome Kit -->
@@ -35,24 +35,21 @@
     </script>
 
     <style>
-        .font-EB-Garamond {
-            font-family: "EB Garamond", serif;
-        }
-
-        .font-poppins {
-            font-family: "Poppins", sans-serif;
+        .font-lato {
+            font-family: "Lato", sans-serif;
         }
     </style>
 </head>
 
-<body class="max-w-[1440px] mx-auto">
+<body class="max-w-[1440px] mx-auto font-lato">
 
     <!-- Header Start From Here -->
     <header class="mt-3">
-        <div class="navbar lg:bg-[#F85559] lg:rounded-[50px]">
+        <!-- Navigation Start -->
+        <div class="navbar lg:bg-[#F85559] lg:rounded-[50px] text-white lg:h-[80px]">
             <div class="navbar-start pl-2">
                 <div class="lg:block hidden">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal px-1 text-xl font-medium">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -61,23 +58,24 @@
                 </div>
                 <div class="lg:hidden block">
                     <div class="flex justify-center items-center gap-2">
-                        <img src="./images/logo.png" alt="">
-                        <a class="btn btn-ghost text-xl">Fruit Burst</a>
+                        <img src="./images/logo.png" alt="" class="w-14 h-16">
+                        <a class="btn btn-ghost lg:text-4xl font-bold lg:text-white text-black">Fruit Burst</a>
                     </div>
                 </div>
             </div>
             <div class="navbar-center hidden lg:flex ">
                 <div class="flex justify-center items-center gap-2">
                     <img src="./images/logo.png" alt="">
-                    <a class="btn btn-ghost text-xl">Fruit Burst</a>
+                    <a class="btn btn-ghost text-4xl font-bold">Fruit Burst</a>
                 </div>
             </div>
             <div class="navbar-end">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
-                            <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
+                            <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="#121212" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -88,20 +86,85 @@
                     </ul>
                 </div>
                 <div class="lg:block hidden pr-6">
-                    <div class="flex items-center gap-2 rounded">
-                        <input type="text" class="" placeholder="Search" />
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                            class="w-4 h-4 opacity-70">
-                            <path fill-rule="evenodd"
-                                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                                clip-rule="evenodd" />
+                    <label class="input input-bordered border rounded-[50px] flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Search here" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z"
+                                stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                    </div>
+                    </label>
                 </div>
             </div>
         </div>
+        <!-- Navigation End -->
     </header>
     <!-- Header End At Here -->
+
+    <!-- Banner Section Start From Here -->
+    <section class="mt-4">
+        <!-- Banner Carousel -->
+        <div class="carousel w-full lg:h-[500px] h-auto">
+            <!-- Slide-1 Start-->
+            <div id="slide1" style="background-image: url(./images/banner1.png);"
+                class="carousel-item relative w-full flex flex-col justify-center items-center my-5 text-white text-center rounded">
+                <h1 class="pb-5 text-6xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                <p class="font-medium text-xl text-[#F3F3F3] pb-5">We supply highly quality organic
+                    products</p>
+                <button class="btn bg-[#F85559] text-xl font-extrabold text-white border-none">Shop Now</button>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- Slide-1 End -->
+
+            <!-- Slide-2 Start-->
+            <div id="slide2" style="background-image: url(./images/banner2.png);"
+                class="carousel-item relative w-full flex flex-col justify-center items-center my-5 text-white text-center rounded">
+                <h1 class="pb-5 text-6xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                <p class="font-medium text-xl text-[#F3F3F3] pb-5">We supply highly quality organic
+                    products</p>
+                <button class="btn bg-[#F85559] text-xl font-extrabold text-white border-none">Shop Now</button>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- Slide-2 End -->
+
+            <!-- Slide-3 Start-->
+            <div id="slide3" style="background-image: url(./images/banner3.png);"
+                class="carousel-item relative w-full flex flex-col justify-center items-center my-5 text-white text-center rounded">
+                <h1 class="pb-5 text-6xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                <p class="font-medium text-xl text-[#F3F3F3] pb-5">We supply highly quality organic
+                    products</p>
+                <button class="btn bg-[#F85559] text-xl font-extrabold text-white border-none">Shop Now</button>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- Slide-3 End -->
+
+            <!-- Slide-4 Start-->
+            <div id="slide4" style="background-image: url(./images/banner4.png);"
+                class="carousel-item relative w-full flex flex-col justify-center items-center my-5 text-white text-center rounded">
+                <h1 class="pb-5 text-6xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                <p class="font-medium text-xl text-[#F3F3F3] pb-5">We supply highly quality organic
+                    products</p>
+                <button class="btn bg-[#F85559] text-xl font-extrabold text-white border-none">Shop Now</button>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- Slide-4 End -->
+        </div>
+    </section>
+    <!-- Banner Section End At Here -->
+
+
 
 </body>
 
