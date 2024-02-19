@@ -57,16 +57,16 @@
                     </ul>
                 </div>
                 <div class="lg:hidden block">
-                    <div class="flex justify-center items-center gap-2">
-                        <img src="./images/logo.png" alt="" class="w-14 h-16">
-                        <a class="btn btn-ghost lg:text-4xl font-bold lg:text-white text-black">Fruit Burst</a>
+                    <div class="flex justify-between items-center gap-2">
+                        <img src="./images/logo.png" alt="" class="w-10 h-10">
+                        <h1 class="text-3xl font-extrabold text-black">Fruit Burst</h1>
                     </div>
                 </div>
             </div>
-            <div class="navbar-center hidden lg:flex ">
+            <div class="navbar-center hidden lg:flex">
                 <div class="flex justify-center items-center gap-2">
                     <img src="./images/logo.png" alt="">
-                    <a class="btn btn-ghost text-4xl font-bold">Fruit Burst</a>
+                    <h1 class="text-4xl font-bold text-white">Fruit Burst</h1>
                 </div>
             </div>
             <div class="navbar-end">
@@ -206,55 +206,59 @@
     <!-- Banner Section End At Here -->
 
     <!-- Deal the day section start from here -->
-    <section class="mt-48">
-        <div class="flex justify-between items-center">
-            <div>
-                <h1 class="text-5xl font-extrabold text-[#121212]">Deal of the day</h1>
-                <p class="w-[740px] font-medium text-[18px] text-[#6D6D6D] pt-4">Contrary to popular belief, is not
-                    simply random
-                    text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000
+    <section class="lg:mt-48 mt-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+            <div class="px-4 lg:px-0">
+                <h1 class="lg:text-5xl text-3xl font-extrabold text-[#121212] lg:text-start text-center">Deal of the day
+                </h1>
+                <p
+                    class="lg:w-[600px] w-auto lg:font-medium font-normal lg:text-[18px] text-[16px] text-[#6D6D6D] pt-4 lg:text-start text-center">
+                    Contrary to popular belief, is not
+                    simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+                    2000
                     years old.</p>
             </div>
 
-            <div class="flex justify-around items-center gap-16">
-                <div>
-                    <div class="flex flex-col justify-center items-center space-y-3">
-                        <h1 class="text-5xl font-extrabold">24</h1>
-                        <p class="font-medium text-[#6D6D6D]">Days</p>
+            <div class="flex lg:justify-end justify-center">
+                <div class="flex items-center gap-16">
+                    <div>
+                        <div class="flex flex-col justify-center items-center space-y-3">
+                            <h1 class="lg:text-5xl text-3xl font-extrabold">24</h1>
+                            <p class="font-medium text-[#6D6D6D]">Days</p>
+                        </div>
+                        <div class="relative"><i
+                                class="fa-solid fa-ellipsis-vertical text-xl absolute -mt-[70px] ml-[80px]"></i></div>
                     </div>
-                    <div class="relative"><i
-                            class="fa-solid fa-ellipsis-vertical text-xl absolute -mt-[70px] ml-[80px]"></i></div>
-                </div>
-                <div>
-                    <div class="flex flex-col justify-center items-center space-y-3">
-                        <h1 class="text-5xl font-extrabold">25</h1>
-                        <p class="font-medium text-[#6D6D6D]">Hours</p>
+                    <div>
+                        <div class="flex flex-col justify-center items-center space-y-3">
+                            <h1 class="lg:text-5xl text-3xl font-extrabold">25</h1>
+                            <p class="font-medium text-[#6D6D6D]">Hours</p>
+                        </div>
+                        <div class="relative"><i
+                                class="fa-solid fa-ellipsis-vertical text-xl absolute -mt-[70px] ml-[80px]"></i></div>
                     </div>
-                    <div class="relative"><i
-                            class="fa-solid fa-ellipsis-vertical text-xl absolute -mt-[70px] ml-[80px]"></i></div>
-                </div>
-                <div>
-                    <div class="flex flex-col justify-center items-center space-y-3">
-                        <h1 class="text-5xl font-extrabold">15</h1>
-                        <p class="font-medium text-[#6D6D6D]">Minutes</p>
+                    <div>
+                        <div class="flex flex-col justify-center items-center space-y-3">
+                            <h1 class="lg:text-5xl text-3xl font-extrabold">15</h1>
+                            <p class="font-medium text-[#6D6D6D]">Minutes</p>
+                        </div>
+                        <div class="relative"><i
+                                class="fa-solid fa-ellipsis-vertical text-xl absolute -mt-[70px] ml-[80px]"></i></div>
                     </div>
-                    <div class="relative"><i
-                            class="fa-solid fa-ellipsis-vertical text-xl absolute -mt-[70px] ml-[80px]"></i></div>
-                </div>
-                <div>
-                    <div class="flex flex-col justify-center items-center space-y-3">
-                        <h1 class="text-5xl font-extrabold">08</h1>
-                        <p class="font-medium text-[#6D6D6D]">Seconds</p>
+                    <div>
+                        <div class="flex flex-col justify-center items-center space-y-3">
+                            <h1 class="lg:text-5xl text-3xl font-extrabold">08</h1>
+                            <p class="font-medium text-[#6D6D6D]">Seconds</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
+
         <!-- Card Container Start-->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 relative mx-auto gap-5 lg:px-0 px-4">
             <!-- Card-1-Start -->
-            <div class="card w-80 shadow-xl border rounded-lg">
+            <div class="card shadow-xl border rounded-lg">
                 <figure class="px-10 pt-10">
                     <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -309,7 +313,7 @@
             <!-- Card-1-End -->
 
             <!-- Card-2-Start -->
-            <div class="card w-80 shadow-xl border rounded-lg">
+            <div class="card shadow-xl border rounded-lg">
                 <figure class="px-10 pt-10">
                     <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -364,7 +368,7 @@
             <!-- Card-2-End -->
 
             <!-- Card-3-Start -->
-            <div class="card w-80 shadow-xl border rounded-lg">
+            <div class="card shadow-xl border rounded-lg">
                 <figure class="px-10 pt-10">
                     <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -419,7 +423,7 @@
             <!-- Card-3-End -->
 
             <!-- Card-4-Start -->
-            <div class="card w-80 shadow-xl border rounded-lg">
+            <div class="card shadow-xl border rounded-lg">
                 <figure class="px-10 pt-10">
                     <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
                 </figure>
